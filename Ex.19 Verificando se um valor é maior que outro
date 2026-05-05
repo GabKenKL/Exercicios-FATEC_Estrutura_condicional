@@ -1,0 +1,16 @@
+#Algorítmo para verificar se um valor é maior que outro
+
+#declarar.
+print("Digite o primeiro número:")
+x = float(input())
+
+print("Digite o segundo número:")
+y = float(input())
+
+#ínicio.
+if x > y:
+    print("O número" , x , "é maior que o número" , y)
+elif x < y:
+    print("O número" , y , "é maior que o número" , x)
+
+#fim.
