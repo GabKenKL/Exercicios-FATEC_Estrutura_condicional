@@ -1,0 +1,14 @@
+print("Cálculo de horas e minutos.")
+print("Digite o número da hora inicial:")
+hora_inicial = int(input())
+print("Digite o número da hora final:")
+hora_final = int(input())
+
+
+if hora_inicial > hora_final:
+    até_24h = 24 - hora_inicial
+    tempo_total = até_24h + hora_final
+elif hora_inicial < hora_final:
+    tempo_total = hora_final - hora_inicial
+
+print("O tempo total do jogo foi de:" , tempo_total , "horas")
