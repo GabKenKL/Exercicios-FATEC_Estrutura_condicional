@@ -1,0 +1,15 @@
+#Algoritmo
+#Declarar
+A = 0
+B = 0
+
+#inicio
+A = int(input("Digite o primeiro valor: "))
+B = int(input("Digite o segundo valor: "))
+
+if (A > B):
+    print("Em ordem crescente: ", B, ", ", A)
+else:
+        print("Em ordem crescente: ", A, ",", B)
+
+#fim
