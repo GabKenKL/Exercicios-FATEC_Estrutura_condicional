@@ -1,0 +1,24 @@
+print("Cálculo da média e resultado de aprovação. Caso a nota seja maior que 6, será aprovado. Uma nota abaixo de 6 até 3, realizará um exame. Se a nota for menor que 3, o aluno será retido...")
+print("Digite as 4 notas do bimestre do aluno para cálculo da média:")
+print(" ") #print para espaçamento
+
+print("Nota 1:")
+N1 = int(input())
+
+print ("Nota 2:")
+N2 = int(input())
+
+print("Nota 3:")
+N3 = int(input())
+
+print("Nota 4:")
+N4 = int(input())
+
+M = (N1 + N2 + N3 + N4) / 4
+
+if M >= 6:
+    print("Sua média é de" , M , "e você está aprovado.")
+elif 3 <= M < 6:
+    print("Sua média foi de" , M , " e deverá realizar um exame.")
+else:
+    print("Sua média foi de" , M , " e você está retido.")
