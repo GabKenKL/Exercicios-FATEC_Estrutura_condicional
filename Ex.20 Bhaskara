@@ -1,0 +1,26 @@
+print("Cálculo das raízes de uma equação do segundo grau...")
+print("A equação do segundo grau segue o formato AX² + BX + C, sendo as letras A, B e C, coeficientes. Digite os valores dos coeficientes:")
+
+print("A:")
+A = int(input())
+
+print("B:")
+B = int(input())
+
+print("C:")
+C = int(input())
+
+print("") #print de separação.
+print("Realizando Bhaskara...")
+discriminante = B**2 - 4 * A * C
+
+X1 = (-B + discriminante**(1/2)) / 2 * A
+X2 = (-B - discriminante**(1/2)) / 2 * A
+
+if discriminante < 0:
+    print ("A equação do segundo grau não possui raízes reais, pois o valor do discriminante é negativo.")
+elif discriminante == 0:
+    print("A equação do segundo grau possui apenas uma raiz real, pois o valor do discriminante é igual a zero. O valor da raiz é:" , X1)
+else: 
+    print("O valor da raiz X1 é:" , X1)
+    print("O valor da raiz X2 é:" , X2)
