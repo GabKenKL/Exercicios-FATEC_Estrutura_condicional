@@ -1,0 +1,27 @@
+#algorítmo: Receba 3 valores obrigatoriamente em ordem crescente e um 4º valor não necessariamente em ordem. Mostre os 4 números em ordem crescente.
+print("Digite 3 valores obrigatoriamente em ordem crescente e um 4° valor não necessariamente em ordem.")
+
+#declarar.
+print("Digite o primeiro valor:")
+A = float(input())
+
+print("Digite o segundo valor:")
+B = float(input())
+
+print("Digite o terceiro valor:")
+C = float(input())
+
+print("Digite o quarto valor:")
+D = float(input())
+
+#início
+if D < A:
+    print("Os valores em ordem crescente são:" , D , "," , A , "," , B , "e" , C)
+elif A < D < B:
+    print("Os valores em ordem crescente são:" , A , "," , D , "," , B , "e" , C)
+elif B < D < C:
+    print("Os valores em ordem crescente são:" , A , "," , B , "," , D , "e" , C)
+elif C < D:
+    print("Os valores em ordem crescente são:" , A , "," , B , "," , C , "e" , D)
+
+#fim
